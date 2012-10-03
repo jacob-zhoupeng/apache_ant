@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<!-- build.xml - a simple Ant buildfile -->
+<project name="Simple Buildfile" default="compile" basedir=".">
+  <!-- The directory containing source code -->
+  <property name="src.dir" value="src"/>
+
+  <!-- Temporary build directories -->
+  <property name="build.dir" value="build"/>
+  <property name="build.classes" value="${build.dir}/classes"/>
+  <property name="build.lib" value="${build.dir}/lib"/>
+
+  <!-- Target to create the build directories prior to the compile target. -->
+  <target name="prepare">
+    <mkdir dir="${build.dir}"/>
+	<mkdir dir="${build.classes}"/>
+	<mkdir dir="${build.lib}"/>
+  </target>
+
+  <target name="clean" description="Removes all generated files.">
+    <delete dir="${build.dir}"/>
+  </target>
+
+  <target name="compile" depends="prepare" description="Compile all source code.">
+  	<javac srcdir="${src.dir}" destdir="${build.classes}"/>
+  </target>
+
+  <target name="jar" depends="compile" description="Generates oreilly.jar in the 'dist' directory">
+    <!-- Execlude unit tests from the final JAR file -->
+	<jar jarfile="${build.lib}/oreilly.jar" basedir="${build.classes}" excludes="**/*Test.class"/>
+  </target>
+
+  <target name="all" depends="clean,jar" description="Cleans, compiles, then builds the JAR file."/>
+</project>
