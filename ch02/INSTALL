@@ -1,0 +1,6 @@
+donload apache-ant-1.8.x-bin.tar.gz from http://ant.apache.org
+tar xzvf apache-ant-1.8.x-bin.tar.gz
+set ANT_HOME
+set JAVA_HOME
+set PATH=$PATH:$ANT_HOME/bin
+ant -version

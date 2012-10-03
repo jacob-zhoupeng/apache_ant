@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+
+<!-- Example build file for "Ant: The definitive Guide"  -->
+<!-- and its sample project: irssibot -->
+
+<project name="irrsibot" default="usage" basedir=".">
+  <!-- Project-wide settings. All directories are relative to the -->
+  <!-- project root directory -->
+
+  <!-- Project directories -->
+  <property name="src.dir" value="src"/>
+  <property name="doc.dir" value="doc"/>
+  <property name="dist.dir" value="dist"/>
+  <property name="lib.dir" value="lib"/>
+  <property name="bin.dir" value="bin"/>
+  
+  <!-- Temporary build directory names -->
+  <property name="build.dir" value="build"/>
+  <property name="build.classes" value="${build.dir}/classes"/>
+  <property name="build.doc" value="${build.dir}/doc"/>
+  <property name="build.lib" value="${build.dir}/lib"/>
+
+  <!-- Global settings -->
+  <property name="javac.debug" value="on"/>
+
+  <!-- Global "magic" property for <javac> -->
+  <property name="build.compiler" value="modern"/>
+
+  <path id="classpath">
+    <fileset dir="${lib.dir}">
+	  <include name="**/*.jar"/>
+	</fileset>
+  </path>
+
+  <target name="usage">
+    <echo message="Build the foo application with Ant. Targets include:"/>
+	<echo message="  full - build the entire application and its libraries"/>
+	<echo message="  app - build just the application (no libraries)"/>
+    <echo message="  lib - build just the libraries (no application)"/>
+	<echo message="  install - install the application. Read README for details"/>
+	<echo message="  help - display this information"/>
+  </target>
+
+  <!-- Target to create the build directories prior to a compile target -->
+  <!-- We also mark the start time of the build, for the log. -->
+  <target name="prepare">
+    <mkdir dir="${build.dir}"/>
+	<mkdir dir="${build.lib}"/>
+	<mkdir dir="${build.classes}"/>
+	<mkdir dir="${build.classes}/modules"/>
+	<tstamp/>
+	<echo message="${TSTAMP}"/>
+  </target>
+
+  <!-- Build the IRC bot application -->
+  <target name="bot" depends="prepare">
+    <!-- Compile the application classes, not the module classes -->
+	<javac destdir="${build.classes}" debug="${debug.flag}" deprecation="on">
+	  <!-- We could have used javac's srcdir attribute -->
+	  <src path="${src.dir}"/>
+	  <exclude name="irssibot/modules/**"/>
+	  <classpath refid="classpath"/>
+	</javac>
+
+	<!-- Package the application into a JAR -->
+	<jar jarfile="${build.lib}/irssibot.jar" basedir="${build.classes}">
+	  <exclude name="irssibot/modules/**"/>
+	</jar>
+  </target>
+
+  <!-- Build the IRC bot modules -->
+  <target name="modules" depends="prepare,bot">
+    <!-- Compile just the module classes -->
+	<javac destdir="${build.classes}/modules" debug="${debug.flag}" deprecation="on">
+	  <!-- We could have used javac's srcdir attribute -->
+	  <src path="${src.dir}"/>
+	  <include name="irssibot/modules/**"/>
+	  <classpath refid="classpath"/>
+	</javac>
+
+	<!-- Bundle the modules as a JAR -->
+	<jar jarfile="${build.lib}/irssimodules.jar" basedir="${build.classes}/modules">
+	  <include name="irssibot/modules/**"/>
+	</jar>
+  </target>
+
+  <target name="all" depends="clean,bot,modules"/>
+
+  <target name="clean">
+    <delete dir="${build.dir}"/>
+  </target>
+</project>
