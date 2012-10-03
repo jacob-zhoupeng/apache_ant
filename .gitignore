@@ -1,4 +1,6 @@
 *.class
-*.o
-*.obj
-build/
+
+# Package Files #
+*.jar
+*.war
+*.ear
