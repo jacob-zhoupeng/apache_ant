@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project default="all">
+  <property name="a.property" value="a value">
+  <property name="b.property" value="b value">
+
+  <path id="a.path">
+  	<pathelement location="${java.home}/jre/lib/rt.jar"/>
+  </path>
+
+  <target name="all">
+    <javac srcdir=".">
+	  <classpath refid="a.path"/>
+	</javac>
+  </target>
+</project>

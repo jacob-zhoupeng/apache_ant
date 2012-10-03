@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <!-- build.xml - a simple Ant buildfile -->
-<project name="Simple Buildfile" default="compile" basedir=".">
+<project name="Simple Buildfile" default="all" basedir=".">
   <!-- The directory containing source code -->
   <property name="src.dir" value="src"/>
 
