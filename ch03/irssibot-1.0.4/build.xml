@@ -21,9 +21,10 @@
   <property name="build.lib" value="${build.dir}/lib"/>
 
   <!-- Global settings -->
-  <property name="javac.debug" value="on"/>
+  <property name="debug.flag" value="on"/>
+  <property name="java.lib" value="${java.home}/jre/lib/rt.jar"/>
 
-  <!-- Global "magic" property for <javac> -->
+  <!-- Global property for <javac> -->
   <property name="build.compiler" value="modern"/>
 
   <path id="classpath">
@@ -55,7 +56,10 @@
   <!-- Build the IRC bot application -->
   <target name="bot" depends="prepare">
     <!-- Compile the application classes, not the module classes -->
-	<javac destdir="${build.classes}" debug="${debug.flag}" deprecation="on">
+	<javac destdir="${build.classes}" 
+	       debug="${debug.flag}" 
+		   deprecation="on"
+		   source="1.3">
 	  <!-- We could have used javac's srcdir attribute -->
 	  <src path="${src.dir}"/>
 	  <exclude name="irssibot/modules/**"/>
@@ -79,14 +83,81 @@
 	</javac>
 
 	<!-- Bundle the modules as a JAR -->
-	<jar jarfile="${build.lib}/irssimodules.jar" basedir="${build.classes}/modules">
+	<jar jarfile="${build.lib}/irssimodules.jar" 
+	     basedir="${build.classes}/modules"
+		 manifest="MANIFEST.MF">
+	  <manifest>
+	    <attribute name="ModuleType" value="irssibot"/>
+	  </manifest>
 	  <include name="irssibot/modules/**"/>
 	</jar>
   </target>
 
   <target name="all" depends="clean,bot,modules"/>
 
+  <!-- Generate the API documentation irssibot and the modules -->
+  <target name="javadoc" depends="bot">
+    <mkdir dir="${doc.dir}/api"/>
+	<javadoc packagenames="irssibot.*" 
+	         sourcepath="${src.dir}" 
+			 destdir="${doc.dir}/api"
+			 author="true"
+			 version="true"
+			 use="true">
+      <classpath refid="classpath"/>
+    </javadoc>
+  </target>
+
+  <!-- Delete class files built during previous builds. Leave directories -->
   <target name="clean">
+    <delete>
+	  <fileset dir="${build.classes}" includes="**/*.class"/>
+	</delete>
+  </target>
+
+  <!-- Delete any created directories and their contents -->
+  <target name="cleanall" depends="clean">
     <delete dir="${build.dir}"/>
+	<delete dir="${dist.dir}"/>
+	<delete dir="${doc.dr}/api"/>
+  </target>
+
+  <!-- Deploy the application in a "ready-to-run" state -->
+  <target name="deploy" depends="bot, javadoc">
+    <!-- Create the distribution directory -->
+	<mkdir dir="${dist.dir}"/>
+	<mkdir dir="${dist.dir}/bin"/>
+	<mkdir dir="${dist.dir}/lib"/>
+	<mkdir dir="${dist.dir}/doc"/>
+	<mkdir dir="${dist.dir}/config"/>
+
+	<!-- Copy the primary program and modules -->
+	<copy todir="${dist.dir}/lib">
+	  <fileset dir="${build.classes}"/>
+	  <fileset dir="${build.lib}" includes="irssibot.jar"/>
+	  <fileset dir="${build.lib}" includes="irssimodules.jar"/>
+	  <fileset dir="${lib.dir}" includes="*.jar"/>
+	</copy>
+
+	<!-- Copy the documentation -->
+	<copy todir="${dist.dir}/doc">
+	  <fileset dir="${doc.dir}"/>
+	</copy>
+
+	<!-- Copy the pre-fab configuration -->
+    <copy todir="${dist.dir}/config">
+	  <fileset dir="${lib.dir}" includes="*.xml"/>
+	</copy>
+
+	<!-- Copy the running scripts -->
+	<copy todir="${dist.dir}/bin">
+	  <fileset dir="${bin.dir}" includes="bot.sh"/>
+	  <fileset dir="${bin.dir}" includes="bot.bat"/>
+	</copy>
+
+	<!-- Copy the pre-fab configuration files -->
+	<copy todir="${dist.dir}/config">
+	  <fileset dir="${lib.dir}" includes="*.xml"/>
+	</copy>
   </target>
 </project>

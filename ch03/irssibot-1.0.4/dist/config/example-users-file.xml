@@ -1,0 +1,22 @@
+<users-file>
+<!-- user record begin -->
+<user name="adminguy" global-flags="A" password="*******">
+  <channel name="#channel1" flags="oaA" />
+  <channel name="#channel2" flags="oaA" />
+  <hostmasks>
+    <mask>*!ident@host.mask.com</mask>
+    <mask>*!1dent@another.host.edu</mask>
+  </hostmasks>
+</user>
+<!-- user record end -->
+
+<!-- user record begin -->
+<user name="lewser" global-flags="" password="orororor">
+  <channel name="#channel5" flags="oa" />
+  <hostmasks>
+    <mask>*!just@one.mask.mil</mask>
+  </hostmasks>
+</user>
+<!-- user record end -->
+
+</users-file>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<irssibot-config>
+
+  <general>
+    <dateformat>dd.MM.yyyy HH:mm</dateformat>
+  </general>
+
+   <!-- module list BEGINS -->
+   <module-list>
+      <module>UserTools</module>
+   </module-list>
+   <!-- module list ENDS -->
+
+  <!-- database info -->
+  <database>
+    <host hostname="mysql.domain.com" hostport="3306" />
+    <user name="mysqluser" password="passwd" />
+  </database>
+
+   <!-- server instance BEGINS -->
+   <server-instance network="IRCNet">
+
+      <bot-info nick="ankybot" altnick="ankybot-" realname="http://dreamland.tky.hut.fi/IrssiBot/" />
+      <user-file path="config/example-users-file.xml" />
+
+      <server-list>
+	 <address>irc.server1.address:port</address>
+	 <address>irc.server2.address:port</address>
+	 <address>irc.server3.address:port</address>
+      </server-list>
+
+      <channel-list>
+         <channel name="#channel1" key="" forcedmodes="+nt-slim" />
+         <channel name="#channel2" key="myKey" forcedmodes="+nt-slim" />
+      </channel-list>   
+
+   </server-instance>
+   <!-- server instance ENDS -->
+
+   <!-- copypaste & edit <server-instance>s here to add server connects --> 
+
+
+</irssibot-config>
+
+
+
