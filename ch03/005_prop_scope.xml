@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<project name="global_socpe" basedir="." default="target2">
+  <property name="prop1" value="one"/>
+
+  <target name="target1">
+    <property name="prop2" value="two"/>
+	<echo message="${prop1}:${prop2}"/>
+  </target>
+
+  <target name="target2" depends="target1">
+    <echo message="${prop1}:${prop2}"/>
+  </target>
+</project>

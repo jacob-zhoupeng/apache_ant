@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project name="arg demo" default="xslt" basedir=".">
+  <property name="lib.dir" value="lib"/>
+  <property name="xalan.jar" value="${lib.dir}/xalan-2.4.0.jar"/>
+  <property name="xerces.jar" value="${lib.dir}/xerces-1.4.4.jar"/>
+
+  <property name="output.dir" value="data"/>
+  <property name="data.dir" value="src"/>
+  <property name="xmldata" value="${data.dir}/student_directory.xml"/>
+  <property name="stylesheet-text" value="${data.dir}/student_text.xsl"/>
+  <property name="stylesheet-html" value="${data.dir}/student_html.xsl"/>
+  <property name="result-html" value="${output.dir}/student_HTML.html"/>
+  <property name="result-text" value="${output.dir}/student_TEXT.txt"/>
+
+  <path id="project.class.path">
+    <pathelement location="${xalan.jar}"/>
+	<pathelement location="${xerces.jar}"/>
+  </path>
+ 
+ <target name="prepare">
+   <mkdir dir="${output.dir}"/>
+ </target>
+
+  <target name="clean">
+    <delete dir="${output.dir}"/>
+  </target>
+
+  <target name="xslt-html" depends="prepare">
+    <echo message="Transforming '${xmldata}' to html format using '${stylesheet-html}'"/>
+
+	<java fork="true" classname="org.apache.xalan.xslt.Process" failonerror="true">
+	  <arg line="-IN"/>
+	  <arg value="${xmldata}"/>
+	  <arg line="-XSL"/>
+	  <arg value="${stylesheet-html}"/>
+	  <arg line="-OUT"/>
+	  <arg value="${result-html}"/>
+	  <classpath refid="project.class.path"/>
+	</java>
+
+	<echo message="Success! See '${result-html}' for the output."/>
+  </target>
+
+  <target name="xslt-text" depends="prepare">
+    <echo message="Transforming '${xmldata}' to plain text format using '${stylesheet-text}'"/>
+
+	<java fork="true" classname="org.apache.xalan.xslt.Process" failonerror="true">
+	  <arg line="-IN"/>
+	  <arg value="${xmldata}"/>
+	  <arg line="-XSL"/>
+	  <arg value="${stylesheet-text}"/>
+	  <arg line="-OUT"/>
+	  <arg value="${result-text}"/>
+	  <classpath refid="project.class.path"/>
+	</java>
+
+	<echo message="Success! See '${result-text}' for the output."/>
+  </target>
+
+  <target name="xslt" depends="xslt-text,xslt-html"/>
+
+</project>

@@ -59,7 +59,7 @@
 	<javac destdir="${build.classes}" 
 	       debug="${debug.flag}" 
 		   deprecation="on"
-		   source="1.3">
+		   source="1.4">
 	  <!-- We could have used javac's srcdir attribute -->
 	  <src path="${src.dir}"/>
 	  <exclude name="irssibot/modules/**"/>

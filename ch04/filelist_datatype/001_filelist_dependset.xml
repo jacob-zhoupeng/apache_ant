@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project name="filelist demo" default="xslt" basedir=".">
+  <filelist id="stylesheets" dir="src" files="student_html.xsl,student_text.xsl"/>
+  <filelist id="xmlfiles" dir="src" files="student_directory.xml"/>
+
+  <target name="xslt">
+    <!-- erase employeeDirectory.html if any of the XML files or XSLT -->
+	<!-- stylesheet are newer -->
+	<dependset>
+	  <srcfilelist refid="stylesheets"/>
+	  <srcfilelist refid="xmlfiles"/>
+	  <targetfilelist dir="src" files="student_HTML.html,student_TEXT.txt"/>
+	</dependset>
+	
+	<echo message="Transforming Files..."/>
+	
+	<property name="xmldata" value="src/student_directory.xml"/>
+
+	<property name="stylesheet-html" value="src/student_html.xsl"/>
+	<property name="result-html" value="src/student_HTML.html"/>
+
+	<property name="stylesheet-text" value="src/student_text.xsl"/>
+	<property name="result-text" value="src/student_TEXT.txt"/>
+
+	<property name="xalan.jar" value="lib/xalan-2.4.0.jar"/>
+	<property name="xerces.jar" value="lib/xerces-1.4.4.jar"/>
+
+    <path id="project.class.path">
+      <pathelement location="${xalan.jar}"/>
+	  <pathelement location="${xerces.jar}"/>
+    </path>
+
+    <echo message="transform to html format..."/>
+	<java fork="true" classname="org.apache.xalan.xslt.Process" failonerror="true">
+	  <arg line="-IN"/>
+	  <arg value="${xmldata}"/>
+	  <arg line="-XSL"/>
+	  <arg value="${stylesheet-html}"/>
+	  <arg line="-OUT"/>
+	  <arg value="${result-html}"/>
+	  <classpath refid="project.class.path"/>
+	</java>
+	
+	<echo message="transform to text format..."/>
+	<java fork="true" classname="org.apache.xalan.xslt.Process" failonerror="true">
+	  <arg line="-IN"/>
+	  <arg value="${xmldata}"/>
+	  <arg line="-XSL"/>
+	  <arg value="${stylesheet-text}"/>
+	  <arg line="-OUT"/>
+	  <arg value="${result-text}"/>
+	  <classpath refid="project.class.path"/>
+	</java>
+
+  </target>
+</project>

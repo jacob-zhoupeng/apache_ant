@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<project name="mybad" basedir="." default="all">
+  <target name="all">
+    <notarealtag/>
+  </target>
+  <property naame="oblivion" value="nil"/>
+</project>

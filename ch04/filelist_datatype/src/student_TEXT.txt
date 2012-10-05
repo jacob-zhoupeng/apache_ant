@@ -1,0 +1,30 @@
+
+    Student Directory for example.edu
+	
+  
+    
+    Name: George Washington
+	
+    Major: Politics
+	312-123-4567
+	
+    Email: gw@example.edu
+  
+  
+    
+    Name: Janet Jones
+	
+    Major: Undeclared
+	311-122-2233
+	
+    Email: janetj@example.edu
+  
+  
+    
+    Name: Joe Taylor
+	
+    Major: Engineering
+	211-111-2333
+	
+    Email: joe@example.edu
+  

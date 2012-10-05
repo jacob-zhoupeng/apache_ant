@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- "¸¯ÀÃ"´íÎó(festering error)  -->
+<project name="mybad" basedir="." default="all">
+  <property name="oblivion" value="nul"/>
+  <target name="all">
+    <echo message="Hello there, all you happy people."/>
+  </target>
+  <target name="chaos">
+    <notarealtag/>
+  </target>
+</project>

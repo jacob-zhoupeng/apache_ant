@@ -41,16 +41,19 @@ public abstract class AbstractModule extends Thread
      * Vector containing MessageData objects waiting for processing.
      */
     private final Vector messageQueue = new Vector();
-    /**
+    
+	/**
      * A lock object used for producer-consumer synchronization
      */
     private final Object processLock = new Object();
-    /**
+    
+	/**
      * Indicates whether the module thread should continue executing
      * its run() loop.
      */
     private boolean alive = true;
-    /**
+    
+	/**
      * A state variable indicating whether the module is executing ok.
      * When an exception occurs in the consumer thread, this variable is set
      * to the thrown exception and it is thrown to the producer thread
@@ -67,17 +70,18 @@ public abstract class AbstractModule extends Thread
      * @return module info string
      */
     public abstract String getModuleInfo();
-    /**
+    
+	/**
      * Gets module's state as a Properties object. If module does not wish to save state 
      * OR its state has not been changed since last getState(), it should return null. 
      * This is to minimize disk access. 
      *
      * @return state of module as a Properties object
      */
-    public Properties getState() 
-    {
-	return null;
+    public Properties getState() {
+		return null;
     }
+
     /**
      * called upon loading the module
      *
@@ -89,17 +93,16 @@ public abstract class AbstractModule extends Thread
      *         be unloaded immediately.
      * @see irssibot.core.Core
      */
-    public boolean onLoad(Properties state,Core core) 
-    {
-	return true;
+    public boolean onLoad(Properties state,Core core) {
+		return true;
     }
-    /**
+    
+	/**
      * Called upon unloading the module.
      *
      */
-    public void onUnload()
-    {
-	/* do nothing */
+    public void onUnload() {
+		/* do nothing */
     }
 
     /**
@@ -113,31 +116,30 @@ public abstract class AbstractModule extends Thread
      * @see #processMessage(IrcMessage,ServerConnection)
      */
     public final void addMessage(IrcMessage message,ServerConnection serverConnection) 
-	throws Exception
-    {
-	synchronized ( processLock ) {
+			throws Exception {
+		synchronized ( processLock ) {
 
-	    //	    System.out.println(getClass().getName() + ".addMessage(): adding message: " + 
-	    //	       message.trailing + " (" + currentThread().getName() + ")");
+	    	//	    System.out.println(getClass().getName() + ".addMessage(): adding message: " + 
+	    	//	       message.trailing + " (" + currentThread().getName() + ")");
 	
-	    /* see if an exception was thrown by the consumer thread */
-	    if( consumerException != null ) {
-		alive = false;
-		throw consumerException;
-	    }
+	    	/* see if an exception was thrown by the consumer thread */
+	    	if (consumerException != null) {
+				alive = false;
+				throw consumerException;
+	    	}
 
-	    if( (message == null) || (serverConnection == null) ) {
-		throw new IllegalArgumentException("AbstractModule.addMessage(): " +
+	    	if((message == null) || (serverConnection == null)) {
+				throw new IllegalArgumentException("AbstractModule.addMessage(): " +
 						   "either parameter cannot be null!");
-	    }
+	    	}
 
-	    /* add the message at the end of the queue */
-	    messageQueue.addElement(new MessageData(message,serverConnection));
+	    	/* add the message at the end of the queue */
+	    	messageQueue.addElement(new MessageData(message,serverConnection));
 
-	    /* notify the consumer thread */
-	    processLock.notifyAll();
-	}
-	//System.out.println(getClass().getName() + ".addMessage(): exiting");
+	    	/* notify the consumer thread */
+	    	processLock.notifyAll();
+		}
+		// System.out.println(getClass().getName() + ".addMessage(): exiting");
     }
 
     /**
@@ -213,13 +215,3 @@ public abstract class AbstractModule extends Thread
 	System.out.println(getClass().getName() + ": " + msg);
     }
 }
-
-
-
-
-
-
-
-
-
-

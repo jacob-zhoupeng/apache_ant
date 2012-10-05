@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<project name="prop_immutable" basedir="." default="all">
+  <property name="property.one" value="${property.two}:one"/>
+  <property name="property.two" value="two"/>
+
+  <target name="all">
+    <echo message="${property.one}"/>
+	<echo message="${property.two}"/>
+  </target>
+</project>

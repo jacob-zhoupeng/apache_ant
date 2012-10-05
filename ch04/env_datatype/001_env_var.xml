@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="env_datatype" basedir="." default="deploy">
+  <property name="tomcat.home" value="/path/to/tomcat"/>
+
+  <target name="deploy">
+    <!-- Call a deployment script, setting up the TOMCAT_HOME -->
+	<!-- environment vairable. -->
+	<exec executable="deploy.bat">
+	  <env key="TOMCAT_HOME" value="${tomcat.home}"/>
+	</exec>
+  </target>
+</project>

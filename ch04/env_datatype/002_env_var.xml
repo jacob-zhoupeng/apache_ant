@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="arg demo" default="checkXalanHome" basedir=".">
+  <!-- Set up the 'env' prefix for environment variables -->
+  <property environment="env"/>
+  <property name="xalan.home" value="${env.XALAN_HOME}"/>
+
+  <!-- About the build if XALAN_HOME is not set -->
+  <target name="checkXalanHome" unless="env.XALAN_HOME">
+    <echo message="env.PATH: ${env.PATH}"/>
+	<echo message="env.JAVA_HOME: ${env.JAVA_HOME}"/>
+	<echo message="env.CLASSPATH: ${env.CLASSPATH}"/>
+    <fail message="XALAN_HOME must be set!"/>
+  </target>
+</project>

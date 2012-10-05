@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project name="filterset demo" basedir="." default="tokenFilterDemo">
+  <target name="prepare">
+    <delete dir="build"/>
+    <mkdir dir="build"/>
+  </target>
+
+  <target name="tokenFilterDemo" depends="prepare">
+    <!-- set up the timestamp -->
+	<tstamp>
+	  <format property="now" pattern="MMMM d yyyy hh:mm aa"/>
+	</tstamp>
+	<copy todir="build" filtering="true">
+	  <fileset dir="src">
+	    <include name="**/*.java"/>
+	  </fileset>
+
+	  <!-- search for %COPYRIGHT! and %BUILD_DATE! -->
+	  <filterset begintoken="%" endtoken="!">
+	    <filter token="BUILD_DATA" value="${now}"/>
+        <filter token="COPYRIGHT" value="Copyright (C) 2002 O'Reilly"/>
+	  </filterset>
+	</copy>
+  </target>
+</project>
