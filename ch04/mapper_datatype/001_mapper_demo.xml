@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<project name="mapper demo" default="backupFiles" basedir=".">
+  <!-- define a mapper for backing up files -->
+  <mapper id="globBackupMapper" type="glob" from="*.java" to="*.java.bak"/> <!-- copy and rename -->
+  <mapper id="identityMapper" type="identity"/> <!-- copy default mapper -->
+  <mapper id="flattenMapper" type="flatten"/> <!-- copy without directory arch -->
+  <mapper id="mergeMapper" type="merge" to="oreilly.zip"/> <!-- copy all files to a zip file -->
+  <mapper id="regexpMapper" type="regexp" from="[hH]ello*.java" to="[hH]ello*.java.bak"/> <!-- copy and rename with regular expression -->
+
+  <target name="clean">
+  	<delete dir="bak"/>
+  </target>
+
+  <target name="prepare">
+    <mkdir dir="bak"/>
+  </target>
+
+  <target name="backupFiles" depends="prepare">
+    <copy todir="bak">
+	  <!-- select the files to copy with a fileset -->
+	  <fileset dir="src" includes="**/*.java"/>
+	  <mapper refid="globBackupMapper"/>
+	  <!-- //////////////// uncomment mapper to test ////////////////
+	  <mapper refid="mergeMapper"/>
+	  <mapper refid="flattenMapper"/>
+	  <mapper refid="regexpMapper"/>
+	  <mapper refid="indetityMapper"/>
+	  ////////////////////////////////////////////////////////////-->
+	</copy>
+  </target>
+</project>

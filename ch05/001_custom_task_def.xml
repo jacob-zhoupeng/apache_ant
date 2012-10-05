@@ -1,0 +1,37 @@
+<!-- 
+     Build the custom tasks in this project directory. We'll 
+     assume that all the custom task classes are packaged under
+	 the 'src' directory and that the results will wind up in
+	 'dist'. Users must change the value for the Ant directory
+	 and include any further libraries they choose to use with
+	 their tasks.
+-->
+<project name="customtasks" basedir="." default="all">
+  <property name="src.dir" value="src"/>
+  <!-- NOTE: the absolute directory. CHANGE THIS BEFORE BUILDING -->
+  <!-- 
+       It would be possible to use environment variables, but we
+       do not assume they are set
+  -->
+  <property name="ant.dir" value="/opt/ant"/>
+  <property name="ant.lib" value="${ant.dir}/lib"/>
+
+  <property name="build.dir" value="build"/>
+  <property name="dist.dir" value="dist"/>
+
+  <!-- Compile all of the task object classes -->
+  <target name="all">
+    <mkdir dir="${build.dir}"/>
+	<javac srcdir="${src.dir}"
+	       destdir="${build.dir}">
+	  <classpath>
+	    <fileset dir="${ant.lib}">
+		  <include name="**/*.jar"/>
+		</fileset>
+	  </classpath>
+	</javac>
+	<copy todir="${dist.dir}">
+	  <fileset dir="${build.dir}"/>
+	</copy>
+  </target>
+</project>
