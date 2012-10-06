@@ -1,0 +1,5 @@
+<touch file="build.xml"/> <!-- refresh the timestamp with current time -->
+
+<touch datetime="06/25/1999 6:15 AM">
+  <fileset dir="${builddir}"/>
+</touch>

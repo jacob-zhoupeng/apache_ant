@@ -1,0 +1,1 @@
+<taskdef name="mycodegen" classname="com.foobar.tasks.MyCodeGen"/>

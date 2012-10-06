@@ -1,0 +1,4 @@
+<style destdir="${builddir}" style="customers.xslt">
+  <param name="date" expression="${DSTAMP}"/>
+  <include name="customers.xml"/>
+</style>

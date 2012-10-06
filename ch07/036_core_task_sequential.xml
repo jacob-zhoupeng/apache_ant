@@ -1,0 +1,22 @@
+<parallel>
+  <sequential>
+    <!-- copy some critical files first -->
+	<copy ... />
+	
+	<!-- run a code generator -->
+	<java .../ >
+
+	<!-- now compile the client code -->
+	<javac srcdir="${client_srcdir}"
+	       destdir="${client_builddir}"
+		   includes="com/oreilly/client/**"/>
+  </sequential>
+
+  <!-- 
+       compile the server code in parallel with everything 
+	   contained in the <sequential> task 
+  -->
+  <javac srcdir="${server_srcdir}"
+         destdir="${server_builder}"
+		 includes="com/acme/server/**"/>
+</parallel>

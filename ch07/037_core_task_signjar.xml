@@ -1,0 +1,2 @@
+<signjar jar="${builddir}/server.jar" alias="oreilly"
+         storepass="${password}"/>

@@ -1,0 +1,6 @@
+<war warfile="${builddir}/ecom.war"
+     webxml="src/metadata/web.xml">
+  <fileset dir="src/docroot"/>
+  <classes dir="${builddir}" includes="**/*.class"/>
+  <lib dir="${builddir}" includes="*.jar"/>
+</war>

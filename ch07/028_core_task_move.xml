@@ -1,0 +1,6 @@
+<move todir="${builddir}/foo">
+  <!-- the files to move -->
+  <fileset dir="${builddir}">
+    <include name="**/*.class"/>
+  </fileset>
+</move>

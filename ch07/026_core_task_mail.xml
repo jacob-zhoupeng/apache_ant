@@ -1,0 +1,6 @@
+<property name="my.mailhost" value="mail.oreilly.com"/>
+<mail from="ant@foobar.com"
+      tolist="developers@foobar.com"
+	  subject="Build Results"
+	  mailhost="${my.mailhost}"
+	  files="buildlog.txt"/>

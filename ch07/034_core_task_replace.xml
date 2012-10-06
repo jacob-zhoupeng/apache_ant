@@ -1,0 +1,17 @@
+<replace file="${builddir}/replaceSample.txt"
+         token="@builddate@"
+		 value="${DSTAMP}"/>
+
+<replace file="${builddir}/replaceSample.txt">
+  <replacetoken>
+    <![CDATA[Token line 1 Token line 2]]>
+  </replacetoken>
+  <replacevalue>
+    <![CDATA[Line 1 Line 2]]>
+  </replacevalue>
+</replace>
+
+<replace dir="${srcdir} includes="**/*.java" propertyfile="tokens.properties">
+  <replacefilter token="@vendor@" property="vendor.name"/>
+  <replacefilter token="@version@" property="version.name"/>
+</replace>

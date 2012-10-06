@@ -1,0 +1,4 @@
+<!-- expand manuscript.jar -->
+<unjar src="manuscript.jar"/>
+
+<unjar src="manuscript.jar" dest="$builddir"/>

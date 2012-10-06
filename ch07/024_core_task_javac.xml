@@ -1,0 +1,3 @@
+<javac srcdir="${srcdir}"
+       destdir="${builddir}"
+	   includes="com/oreilly/antbook/**"/>

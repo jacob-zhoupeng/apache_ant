@@ -1,0 +1,9 @@
+<!-- record the javac compile verbose log to file javac.log -->
+<record name="javac.log" loglevel="debug"
+        action="start" append="false"/>
+
+<javac srcdir="${srcdir}" destdir="${builddir}"
+       includes="com/oreilly/antbook/**">
+</javac>
+
+<record name="javac.log" action="stop"/>

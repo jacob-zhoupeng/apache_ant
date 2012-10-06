@@ -1,0 +1,15 @@
+<sql driver="${db.driver}"
+     url="${db.url}"
+	 userid="${db.userid}"
+	 password="${db.password}"
+	 src="report.sql"/>
+
+<sql driver="${db.driver}"
+     url="${db.url}"
+	 userid="${db.userid}"
+	 password="${db.password}">
+  SELECT *
+  FROM ReportTbl;
+  // other sql
+  SELECT ... ;
+</sql>

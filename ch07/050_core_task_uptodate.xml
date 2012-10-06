@@ -1,0 +1,12 @@
+<uptodate property="jar_ok" targetfile="${builddir}/classes.jar">
+  <srcfiles dir="${builddir}" includes="**/*.class"/>
+</uptodate>
+
+<!-- 
+  ===============================================================
+-->
+
+<uptodate property="codegen_uptodate">
+  <srcfiles dir="src" includes="**/*.template"/>
+  <mapper type="glob" from="*.template" to="*.java"/>
+</uptodate>

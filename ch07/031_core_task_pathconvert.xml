@@ -1,0 +1,9 @@
+<fileset id="sources1" dir="src"
+         includes="**/*.java"
+		 excludes="**/test/**/*.java"/>
+<pathconvert targetos="unix" property="p1" refid="sources1"/>
+
+<!--
+    p1:
+	/home/aidan/src/com/oreilly/Book.java:/home/aidan/src/com/oreilly/Chapter.java
+-->

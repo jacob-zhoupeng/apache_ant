@@ -1,0 +1,21 @@
+<property name="builddir" value="build"/>
+<property name="srcdir" value="src"/>
+
+<property resource="com/oreilly/antbook/test.properties">
+  <classpath>
+    <pathelement path="${srcdir}"/>
+  </classpath>
+</property>
+
+<!-- display the property values -->
+<echo message="book.title = ${book.title}"/>
+<echo message="book.author = ${book.author}"/>
+
+<!-- 
+  ========================================================
+-->
+
+<property environment="env"/>
+<property name="tomcat.home" value="${env.TOMCAT_HOME}"/>
+<property name="java.home" value="${env.JAVA_HOME}"/>
+<property name="classpath" value="${env.CLASSPATH}"/>

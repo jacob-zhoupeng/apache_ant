@@ -1,0 +1,7 @@
+<target name="prepare">
+  <mkdir dir="${builddir}"/>
+  <mkdir dir="${deploydir}/docs"/>
+</target>
+
+<target name="compile" depends="prepare">
+</target>

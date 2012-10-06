@@ -1,0 +1,4 @@
+<!-- expand manuscript.war -->
+<unwar src="manuscript.war"/>
+
+<unwar src="manuscript.war" dest="$builddir"/>

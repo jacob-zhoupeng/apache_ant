@@ -1,0 +1,1 @@
+<unzip src="dist.jar" dest="${builddir}"/>

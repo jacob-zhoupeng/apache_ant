@@ -1,0 +1,12 @@
+<javadoc excludepackagenames="com.oreilly.test.*"
+         destdir="docs"
+		 windowtitle="My Documentation">
+  <package name="com.oreilly.antbook.*"/>
+  <package name="com.oreilly.util.*"/>
+  <sourcepath location="${srcdir}"/>
+  <classpath location="${builddir}"/>
+  <bottom>
+    <![CDATA[<em>Copyright (C) 2001, O'Reilly</em>
+	<br/>All Rights Reserved]]>
+  </bottom>
+</javadoc>

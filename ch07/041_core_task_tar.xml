@@ -1,0 +1,3 @@
+<tar tarfile="${dist}/classes.tar"
+     basedir="${builddir}"
+	 includes="**/*.class"/>

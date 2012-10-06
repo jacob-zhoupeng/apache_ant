@@ -1,0 +1,24 @@
+<!--
+  tstamp format:
+  DSTAMP    yyyyMMdd    20010916
+  TSTAMP    HHmm        1923
+  TODAY     MMMM d yyyy September 16 2001
+-->
+
+<tstamp>
+  <format property="now"
+          pattern="MMMM d yyyy hh:mm aa"/>
+  <format property="hour_earlier"
+          pattern="MMMM d yyyy hh:mm aa"
+		  offset="-1"
+		  unit="hour"/>
+  <format property="minute_later"
+          pattern="MMMM d yyyy hh:mm aa"
+		  offset="1"
+		  unit="minute"/>
+</tstamp>
+
+<!-- now display time -->
+<echo>now: ${now}</echo>
+<echo>one hour earlier from now: ${hour_earlier}</echo>
+<echo>one minute later from now: ${minute_later}</echo>
