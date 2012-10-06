@@ -1,0 +1,9 @@
+<copy todir="${builddir}/srccopy">
+  <fileset dir="${srcdir}">
+    <include name="**/*.java"/>
+  </fileset>
+
+  <filterset>
+    <filter token="VERSION" value="${app.version}"/>
+  </filterset>
+</copy>

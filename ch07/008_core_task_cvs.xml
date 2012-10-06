@@ -1,0 +1,6 @@
+<cvs command="-version"/>
+
+<cvs dest="${builddir}"
+     cvsroot=":local:C:\cvsrepository\cvsroot"
+	 tag="release1.1"
+	 package="antbook"/>

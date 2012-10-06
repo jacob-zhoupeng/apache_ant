@@ -1,0 +1,9 @@
+<!--
+     Set vmlauncher="false", otherwise this fails when using
+	 JDK 1.4beta1 on Windows 2000
+-->
+<apply executable="type" vmlauncher="false" os="Windows 2000">
+  <fileset dir=".">
+    <include name="build.xml"/>
+  </fileset>
+</apply>

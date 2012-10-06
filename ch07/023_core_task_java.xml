@@ -1,0 +1,26 @@
+<java classname="com.oreilly.antbook.JavaTest">
+  <sysproperty key="oreilly.home" value="${builddir}"/> <!-- $java -Doreilly.home=build -->
+  <arg value="Eric Burke"/>
+  <arg line="-verbose -debug"/>
+  <arg path="/home;/index.html"/>
+  <classpath>
+    <pathelement path="${builddir}"/>
+  </classpath>
+</java>
+
+<!-- 
+=============================================================================================
+-->
+
+<!-- this is defined at the "target level", parallel to <target>s -->
+<path id="thirdparty.class.path">
+  <pathelement path="lib/crimson.jar"/>
+  <pathelement path="lib/jaxp.jar"/>
+  <pathelement path="lib/xalan.jar"/>
+</path>
+
+<target name="rundemo">
+  <java classname="com.oreilly.antbook.JavaTest">
+    <classpath refid="thirdparty.class.path"/>
+  </java>
+</target>

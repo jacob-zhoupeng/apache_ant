@@ -1,0 +1,39 @@
+<jar jarfile="${builddir}/sample.jar"
+     basedir="${builddir}"
+	 includes="**/*.class"/>
+
+<jar jarfile="${builddir}/sample2.jar">
+  <fileset dir="${builddir}" includes="**/*.class"/>
+</jar>
+
+<jar jarfile="build/sample3.jar" basedir="src" includes="**/*.java">
+  <manifest>
+    <attribute name="Version" value="3.2"/>
+	<attribute name="Release-Date" value="20 Mar 2002"/>
+	<section name="drinks">
+	  <attribute name="favoriteSoda" value="Coca Cola"/>
+	  <attribute name="favoriteBeer" value="Amber Bock"/>
+	</section>
+	<section name="snacks">
+	  <attribute name="cookie" value="chocolateChip"/>
+	  <attribute name="iceCream" value="mooseTracks"/>
+	</section>
+  </manifest>
+</jar>
+
+<!--
+META-INF/MANIFEST.MF
+
+Manifest-Version: 1.0
+Release-Date: 20 Mar 2002
+Version: 3.2
+Create-By: Ant 1.8.x
+
+Name: snacks
+cookie: chocolateChip
+iceCream: mooseTracks
+
+Name: drinks
+favoriteBeer: Amber Bock
+favoriteSoda: Coca Cola
+-->

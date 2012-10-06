@@ -1,0 +1,23 @@
+<target name="tokenFilterDemo" depends="prepare">
+  <filter token="VERSION" value="1.0"/>
+
+  <copy todir="build" filtering="true">
+    <!-- select files to copy -->
+	<fileset dir="src">
+	  <include name="**/*.java"/>
+	</fileset>
+	<filterset begintoken="%" endtoken="!">
+	  <filter token="COPYRIGHT" value="Copyright (C) 2002 O'Reilly"/>
+	</filterset>
+  </copy>
+</target>
+
+<!-- 
+/**
+ * @version @VERSION@ --> @version 1.0
+ * @copy %COPYRIGHT!  --> @copy Copyright (C) 2002 O'Reilly
+ */
+public class Hello {
+	System.out.println("Hell World!");
+}
+-->

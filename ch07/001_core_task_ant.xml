@@ -1,0 +1,7 @@
+<ant antfile="util_buildfile.xml"/>
+
+<ant dir="gui" target="clean"/>
+
+<ant antfile="util_buildfile.xml">
+  <property name="builddir" value="utiloutput"/>
+</ant>

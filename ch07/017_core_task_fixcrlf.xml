@@ -1,0 +1,9 @@
+<!-- replace tab with 4 spaces in all java source file -->
+<fixcrlf srcdir="${srcdir}"
+         destdir="${builddir}"
+		 eol="asis"
+		 tab="remove"
+		 tablength="4"
+		 eof="asis"
+		 includes="**/*.java"
+		 javafiles="true"/>

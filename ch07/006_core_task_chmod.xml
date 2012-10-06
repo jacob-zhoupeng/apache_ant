@@ -1,0 +1,5 @@
+<chmod perm="444">
+  <fileset dir="${javadocs}">
+    <include name="**/*.html"/>
+  </fileset>
+</chmod>

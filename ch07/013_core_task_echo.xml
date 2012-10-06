@@ -1,0 +1,6 @@
+<echo message="Building to ${builddir}"/>
+
+<echo>
+  You are using version ${java.version}
+  of Java! This message spans two lines.
+</echo>

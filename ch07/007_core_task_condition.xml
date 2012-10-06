@@ -1,0 +1,15 @@
+<condition property="Environment.configured">
+  <and>
+    <!-- test for servlet version 2.3 -->
+	<available classname="javax.servlet.ServletRequestWrapper"/>
+
+	<!-- test for JAXP 1.1 -->
+	<available classname="javax.xml.transform.TransformerFactory"/>
+    
+	<or>
+	  <equals arg1="${java.version}" arg2="1.3.0"/>
+	  <equals arg1="${java.version}" arg2="1.4.0-beta"/>
+	  <equals arg1="${java.version}" arg2="1.4.0"/>
+    </or>
+  </and>
+</condition>

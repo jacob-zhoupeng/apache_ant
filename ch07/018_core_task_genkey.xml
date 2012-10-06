@@ -1,0 +1,15 @@
+<genkey dname="CN=Eric Burke, OU=Authors, O=O'Reilly,
+               L=Sebastopol, S=California, C=US"
+	    alias="ericb"
+		storepass="aidansdaddy"/>
+
+<genkey alias="ericb" storepass="aidansdaddy">
+  <dname>
+    <param name="CN" value="Eric Burke"/>
+	<param name="OU" value="Authors"/>
+	<param name="O" value="O'Reilly"/>
+	<param name="L" value="Sebastopol"/>
+	<param name="S" value="California"/>
+	<param name="C" value="US"/>
+  </dname>
+</genkey>

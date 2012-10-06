@@ -1,0 +1,9 @@
+<target name="clean">
+  <antcall target="cleandir">
+    <param name="dir-to-clean" value="javadocs"/>
+  </antcall>
+</target>
+
+<target name="cleandir">
+  <delete dir="${dir-to-clean}"/>
+</target>

@@ -1,0 +1,5 @@
+<fail/>
+
+<fail>Java version ${java.version} is not allowed!</fail>
+
+<fail message="Java version ${java.version} is not allowed!"/>

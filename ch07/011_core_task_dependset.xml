@@ -1,0 +1,5 @@
+<dependset>
+  <srcfileset dir="${basedir}" include="build.xml"/>
+  <srcfileset dir="${srcdir}" include="**/*.java"/>
+  <targetfileset dir="${builddir}" includes="**/*.class"/>
+</dependset>

@@ -1,0 +1,9 @@
+<ear earfile="${builddir}/myapp.ear"
+     appxml="ear_deploy_descriptor/application.xml"
+	 basedir="${builddir}"
+	 includes="*.jar,*.war"/>
+
+<ear earfile="${builddir}/myapp2.ear"
+     appxml="ear_deploy_descriptor/application.xml">
+  <fileset dir="${builddir}" includes="*.jar,*.war"/>
+</ear>

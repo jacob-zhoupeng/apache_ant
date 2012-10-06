@@ -1,0 +1,4 @@
+<exec executable="dir" dir="${builddir}"
+      vmlauncher="false" os="Windows 2000">
+  <arg line="/b"/>
+</exec>

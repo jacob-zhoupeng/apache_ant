@@ -1,0 +1,2 @@
+<!-- compress manuscript.tar to manuscript.tar.gz -->
+<gzip src="manuscript.tar" dest="manuscript.tar.gz"/>

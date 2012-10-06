@@ -1,0 +1,4 @@
+<!-- expand manuscript.tar.gz to manuscript.tar -->
+<gunzip src="manuscript.tar.gz"/>
+
+<gunzip src="manuscript.tar.gz" dest="$builddir"/>
