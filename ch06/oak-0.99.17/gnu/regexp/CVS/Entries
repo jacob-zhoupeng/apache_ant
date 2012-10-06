@@ -1,0 +1,22 @@
+D/util////
+/CharIndexed.java/1.1/Mon Mar  8 01:30:38 1999//
+/CharIndexedCharArray.java/1.1/Mon Mar  8 01:30:38 1999//
+/CharIndexedInputStream.java/1.1/Mon Mar  8 01:30:38 1999//
+/CharIndexedString.java/1.1/Mon Mar  8 01:30:38 1999//
+/CharIndexedStringBuffer.java/1.1/Mon Mar  8 01:30:38 1999//
+/RE.java/1.1/Sun Mar 21 23:33:07 1999//
+/REException.java/1.1/Sun Mar 21 23:33:07 1999//
+/REFilterInputStream.java/1.1/Sun Mar 21 23:33:07 1999//
+/REMatch.java/1.1/Sun Mar 21 23:33:07 1999//
+/REMatchEnumeration.java/1.1/Sun Mar 21 23:33:07 1999//
+/RESyntax.java/1.1/Sun Mar 21 23:33:07 1999//
+/REToken.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenAny.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenBackRef.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenChar.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenEnd.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenOneOf.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenPOSIX.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenRange.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenRepeated.java/1.1/Mon Mar  8 01:30:38 1999//
+/RETokenStart.java/1.1/Mon Mar  8 01:30:38 1999//

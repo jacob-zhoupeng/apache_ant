@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="log.xsl"?>
+
+<build time="0 seconds">
+	<message priority="debug"><![CDATA[Adding reference: ant.PropertyHelper]]></message>
+	<message priority="debug"><![CDATA[Detected Java version: 1.6 in: c:\Program Files\Java\jdk1.6.0_33\jre]]></message>
+	<message priority="debug"><![CDATA[Detected OS: Windows 7]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.ComponentHelper]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file -> d:\git-repos\ant-study\ch06\001_parallel_problem.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.type -> file]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.projectHelper]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.parsing.context]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.targets]]></message>
+	<message priority="debug"><![CDATA[parsing buildfile d:\git-repos\ant-study\ch06\001_parallel_problem.xml with URI = file:/d:/git-repos/ant-study/ch06/001_parallel_problem.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.name -> parallel demo]]></message>
+	<message priority="debug"><![CDATA[Adding reference: parallel demo]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.default-target -> parallel_target]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.parallel demo -> d:\git-repos\ant-study\ch06\001_parallel_problem.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.type.parallel demo -> file]]></message>
+	<message priority="debug"><![CDATA[Project base dir set to: d:\git-repos\ant-study\ch06]]></message>
+	<message priority="debug"><![CDATA[ +Target: ]]></message>
+	<message priority="debug"><![CDATA[ +Target: prepare]]></message>
+	<message priority="debug"><![CDATA[ +Target: parallel_target]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.LocalProperties]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.invoked-targets -> parallel_target]]></message>
+	<message priority="debug"><![CDATA[Attempting to create object of type org.apache.tools.ant.helper.DefaultExecutor]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.executor]]></message>
+	<message priority="debug"><![CDATA[Build sequence for target(s) `parallel_target' is [prepare, parallel_target]]]></message>
+	<message priority="debug"><![CDATA[Complete build sequence is [prepare, parallel_target, ]]]></message>
+	<message priority="debug"><![CDATA[parsing buildfile jar:file:/c:/apache-ant-1.8.4/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/c:/apache-ant-1.8.4/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file]]></message>
+	<target name="prepare" time="0 seconds">
+		<task location="d:\git-repos\ant-study\ch06\001_parallel_problem.xml:4: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping d:\git-repos\ant-study\ch06\test because it already exists.]]></message>
+		</task>
+	</target>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir d:\git-repos\ant-study\ch06\oak-0.99.17 with patternSet{ includes: [**/*.java] excludes: [] }]]></message>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir d:\git-repos\ant-study\ch06\irssibot-1.0.4 with patternSet{ includes: [**/*.java] excludes: [] }]]></message>
+	<target name="parallel_target" time="0 seconds">
+		<task location="d:\git-repos\ant-study\ch06\001_parallel_problem.xml:12: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping d:\git-repos\ant-study\ch06\testxml because it already exists.]]></message>
+		</task>
+		<task location="d:\git-repos\ant-study\ch06\001_parallel_problem.xml:13: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping d:\git-repos\ant-study\ch06\testxml2 because it already exists.]]></message>
+		</task>
+		<task location="d:\git-repos\ant-study\ch06\001_parallel_problem.xml:17: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping d:\git-repos\ant-study\ch06\testxml3 because it already exists.]]></message>
+		</task>
+		<task location="d:\git-repos\ant-study\ch06\001_parallel_problem.xml:9: " name="copy" time="0 seconds">
+			<message priority="debug"><![CDATA[irssibot\config\ConfigParser.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\config\ConfigParser.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\config\ServerInstanceData.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\config\ServerInstanceData.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\config\UserFileParser.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\config\UserFileParser.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\Channel.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\Channel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\ChannelConnect.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\ChannelConnect.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\Core.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\Core.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\Irc.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\Irc.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\IrcMessage.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\IrcMessage.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\ModeQueue.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\ModeQueue.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\ModeQueueElement.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\ModeQueueElement.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\ModuleHandler.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\ModuleHandler.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\ModuleLoader.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\ModuleLoader.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\Nick.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\Nick.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\ServerConnection.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\ServerConnection.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\core\Timer.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\core\Timer.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\modules\AbstractModule.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\modules\AbstractModule.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\modules\ChannelTools.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\modules\ChannelTools.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\modules\TopicTools.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\modules\TopicTools.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\modules\UserTools.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\modules\UserTools.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\user\Host.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\user\Host.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\user\User.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\user\User.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\user\UserChannelInfo.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\user\UserChannelInfo.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\util\StringUtil.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\util\StringUtil.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[irssibot\util\XMLUtil.java omitted as d:\git-repos\ant-study\ch06\test\irssibot\util\XMLUtil.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[No sources found.]]></message>
+		</task>
+		<task location="d:\git-repos\ant-study\ch06\001_parallel_problem.xml:14: " name="copy" time="0 seconds">
+			<message priority="debug"><![CDATA[com\cjw\ircclient\ChatWindow.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\ircclient\ChatWindow.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\ircclient\Client.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\ircclient\Client.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\ircclient\ConnectDialog.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\ircclient\ConnectDialog.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\ircclient\ConnectionsWindow.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\ircclient\ConnectionsWindow.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\ircclient\IRCPanel.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\ircclient\IRCPanel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\ircclient\ListNickRenderer.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\ircclient\ListNickRenderer.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\ircclient\Main.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\ircclient\Main.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\ChoiceValuePanel.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\ChoiceValuePanel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\ConfigurationPanel.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\ConfigurationPanel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\GUIConfigurator.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\GUIConfigurator.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\LinkValuePanel.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\LinkValuePanel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\ListValuePanel.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\ListValuePanel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\SimpleValuePanel.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\SimpleValuePanel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\TriviaPlugin.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\TriviaPlugin.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\TriviaState.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\TriviaState.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\oak\ValuePanel.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\oak\ValuePanel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\util\LeftMinimalLayout.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\util\LeftMinimalLayout.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[com\cjw\util\TopMinimalLayout.java omitted as d:\git-repos\ant-study\ch06\test\com\cjw\util\TopMinimalLayout.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\CharIndexed.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\CharIndexed.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\CharIndexedCharArray.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\CharIndexedCharArray.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\CharIndexedInputStream.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\CharIndexedInputStream.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\CharIndexedString.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\CharIndexedString.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\CharIndexedStringBuffer.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\CharIndexedStringBuffer.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RE.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RE.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\REException.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\REException.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\REFilterInputStream.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\REFilterInputStream.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\REMatch.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\REMatch.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\REMatchEnumeration.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\REMatchEnumeration.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RESyntax.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RESyntax.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\REToken.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\REToken.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenAny.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenAny.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenBackRef.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenBackRef.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenChar.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenChar.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenEnd.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenEnd.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenOneOf.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenOneOf.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenPOSIX.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenPOSIX.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenRange.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenRange.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenRepeated.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenRepeated.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\RETokenStart.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\RETokenStart.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\util\Egrep.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\util\Egrep.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\util\Grep.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\util\Grep.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\util\REApplet.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\util\REApplet.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\util\RETest.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\util\RETest.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[gnu\regexp\util\Tests.java omitted as d:\git-repos\ant-study\ch06\test\gnu\regexp\util\Tests.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\Channel.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\Channel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\ChannelListener.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\ChannelListener.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\ConsoleListener.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\ConsoleListener.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\DefaultIRCListener.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\DefaultIRCListener.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\IRCConnection.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\IRCConnection.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\IRCLine.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\IRCLine.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\IRCListener.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\IRCListener.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\IRCMessage.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\IRCMessage.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\IdentdThread.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\IdentdThread.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\ListNick.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\ListNick.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\irc\OutgoingListener.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\irc\OutgoingListener.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\Oak.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\Oak.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\OakCommand.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\OakCommand.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\OakConfiguration.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\OakConfiguration.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\OakConfigurator.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\OakConfigurator.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\OakPreferences.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\OakPreferences.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\Preferences.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\Preferences.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\CommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\CommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\ConnectionPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\ConnectionPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\DBCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\DBCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\DoSayCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\DoSayCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\ExitCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\ExitCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\HelpCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\HelpCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\JoinPartCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\JoinPartCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\KickCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\KickCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\ModerCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\ModerCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\NickCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\NickCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\PluginCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\PluginCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\SMCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\SMCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\ServerListCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\ServerListCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\commandplug\TopicCommandPlug.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\commandplug\TopicCommandPlug.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\irc\CommandConnection.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\irc\CommandConnection.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\irc\IRCCommandConnection.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\irc\IRCCommandConnection.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\ChannelPlugin.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\ChannelPlugin.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\DCCChatConfigurator.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\DCCChatConfigurator.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\DCCChatManager.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\DCCChatManager.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\DCCChatPlugin.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\DCCChatPlugin.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\DefaultChannelPlugin.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\DefaultChannelPlugin.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\DefaultOakPlugin.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\DefaultOakPlugin.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\EightBall.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\EightBall.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\First.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\First.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\FirstChannelPlugin.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\FirstChannelPlugin.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\OakPlugin.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\OakPlugin.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\PartyLine2.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\PartyLine2.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\PartyLine2Channel.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\PartyLine2Channel.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\PartyLine2Client.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\PartyLine2Client.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\PartyLine2Server.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\PartyLine2Server.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\PartyLine2User.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\PartyLine2User.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\plugin\PluginWrapper.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\plugin\PluginWrapper.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\security\BQLException.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\security\BQLException.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\security\BotDatabaseSecurityManager.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\security\BotDatabaseSecurityManager.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\security\BotSecurityException.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\security\BotSecurityException.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\security\BotSecurityManager.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\security\BotSecurityManager.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\security\OakUser.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\security\OakUser.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\oak\security\PropertiesSecurityManager.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\oak\security\PropertiesSecurityManager.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\security\Crypt.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\security\Crypt.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\ListableProperties.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\ListableProperties.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\ParseUtils.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\ParseUtils.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\Ping.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\Ping.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\Pingable.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\Pingable.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\ThreadInteruptingVector.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\ThreadInteruptingVector.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\TimeWrapper.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\TimeWrapper.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\BooleanType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\BooleanType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\CharRangeType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\CharRangeType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\CharType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\CharType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\CharValuesType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\CharValuesType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\ChoiceGroupItem.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\ChoiceGroupItem.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\Configurable.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\Configurable.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\ConfigurationSystem.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\ConfigurationSystem.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\DisjunctType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\DisjunctType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\FloatOpenRangeType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\FloatOpenRangeType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\FloatRangeType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\FloatRangeType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\FloatType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\FloatType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\FloatValuesType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\FloatValuesType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\GroupItem.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\GroupItem.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\IDType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\IDType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\IntRangeType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\IntRangeType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\IntType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\IntType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\IntValuesType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\IntValuesType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\LinkGroupItem.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\LinkGroupItem.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\ListGroupItem.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\ListGroupItem.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\PrimitiveType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\PrimitiveType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\RegExpType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\RegExpType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\SimpleGroupItem.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\SimpleGroupItem.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\StringType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\StringType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\StringValuesType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\StringValuesType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\TypeFactory.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\TypeFactory.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\TypeFormatException.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\TypeFormatException.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\URLType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\URLType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[org\moxy\util\config\UnionType.java omitted as d:\git-repos\ant-study\ch06\test\org\moxy\util\config\UnionType.java is up to date.]]></message>
+			<message priority="debug"><![CDATA[No sources found.]]></message>
+		</task>
+		<task location="d:\git-repos\ant-study\ch06\001_parallel_problem.xml:8: " name="parallel" time="0 seconds" />
+	</target>
+</build>

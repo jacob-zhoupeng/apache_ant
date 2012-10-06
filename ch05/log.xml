@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="log.xsl"?>
+
+<build time="0 seconds">
+	<message priority="debug"><![CDATA[Adding reference: ant.PropertyHelper]]></message>
+	<message priority="debug"><![CDATA[Detected Java version: 1.6 in: c:\Program Files\Java\jdk1.6.0_33\jre]]></message>
+	<message priority="debug"><![CDATA[Detected OS: Windows 7]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.ComponentHelper]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file -> d:\git-repos\ant-study\ch05\001_custom_task_def.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.type -> file]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.projectHelper]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.parsing.context]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.targets]]></message>
+	<message priority="debug"><![CDATA[parsing buildfile d:\git-repos\ant-study\ch05\001_custom_task_def.xml with URI = file:/d:/git-repos/ant-study/ch05/001_custom_task_def.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.name -> customtasks]]></message>
+	<message priority="debug"><![CDATA[Adding reference: customtasks]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.default-target -> all]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.customtasks -> d:\git-repos\ant-study\ch05\001_custom_task_def.xml]]></message>
+	<message priority="debug"><![CDATA[Setting ro project property: ant.file.type.customtasks -> file]]></message>
+	<message priority="debug"><![CDATA[Project base dir set to: d:\git-repos\ant-study\ch05]]></message>
+	<message priority="debug"><![CDATA[ +Target: ]]></message>
+	<message priority="debug"><![CDATA[ +Target: all]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.LocalProperties]]></message>
+	<message priority="debug"><![CDATA[parsing buildfile jar:file:/c:/apache-ant-1.8.4/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/c:/apache-ant-1.8.4/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file]]></message>
+	<message priority="debug"><![CDATA[Setting project property: src.dir -> src]]></message>
+	<task location="d:\git-repos\ant-study\ch05\001_custom_task_def.xml:10: " name="property" time="0 seconds" />
+	<message priority="debug"><![CDATA[Setting project property: ant.dir -> /opt/ant]]></message>
+	<task location="d:\git-repos\ant-study\ch05\001_custom_task_def.xml:16: " name="property" time="0 seconds" />
+	<message priority="debug"><![CDATA[Setting project property: ant.lib -> /opt/ant/lib]]></message>
+	<task location="d:\git-repos\ant-study\ch05\001_custom_task_def.xml:17: " name="property" time="0 seconds" />
+	<message priority="debug"><![CDATA[Setting project property: build.dir -> build]]></message>
+	<task location="d:\git-repos\ant-study\ch05\001_custom_task_def.xml:19: " name="property" time="0 seconds" />
+	<message priority="debug"><![CDATA[Setting project property: dist.dir -> dist]]></message>
+	<task location="d:\git-repos\ant-study\ch05\001_custom_task_def.xml:20: " name="property" time="0 seconds" />
+	<message priority="debug"><![CDATA[Setting ro project property: ant.project.invoked-targets -> all]]></message>
+	<message priority="debug"><![CDATA[Attempting to create object of type org.apache.tools.ant.helper.DefaultExecutor]]></message>
+	<message priority="debug"><![CDATA[Adding reference: ant.executor]]></message>
+	<message priority="debug"><![CDATA[Build sequence for target(s) `all' is [all]]]></message>
+	<message priority="debug"><![CDATA[Complete build sequence is [all, ]]]></message>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir d:\git-repos\ant-study\ch05\src with patternSet{ includes: [] excludes: [] }]]></message>
+	<message priority="debug"><![CDATA[fileset: Setup scanner in dir d:\git-repos\ant-study\ch05\build with patternSet{ includes: [] excludes: [] }]]></message>
+	<target name="all" time="0 seconds">
+		<task location="d:\git-repos\ant-study\ch05\001_custom_task_def.xml:24: " name="mkdir" time="0 seconds">
+			<message priority="debug"><![CDATA[Skipping d:\git-repos\ant-study\ch05\build because it already exists.]]></message>
+		</task>
+		<task location="d:\git-repos\ant-study\ch05\001_custom_task_def.xml:26: " name="javac" time="0 seconds">
+			<message priority="warn"><![CDATA[d:\git-repos\ant-study\ch05\001_custom_task_def.xml:26: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds]]></message>
+			<message priority="debug"><![CDATA[No sources found.]]></message>
+		</task>
+		<task location="d:\git-repos\ant-study\ch05\001_custom_task_def.xml:33: " name="copy" time="0 seconds">
+			<message priority="debug"><![CDATA[No sources found.]]></message>
+			<message priority="debug"><![CDATA[ omitted as d:\git-repos\ant-study\ch05\dist is up to date.]]></message>
+		</task>
+	</target>
+</build>

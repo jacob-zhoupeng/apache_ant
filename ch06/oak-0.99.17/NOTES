@@ -1,0 +1,22 @@
+NOTES
+
+CommandConnection will be implemented by IRCConnections and DCC connections
+
+incomming strings will be assumed to have a user, command, and params in
+ some form or fashion
+
+IRCCommand's will work over ctcp and will fall into the order of RFC compliance
+
+DCC chat commands will work over dcc and will be in the form
+    .command params
+
+OakCommand will pass call a methods like
+    public void doCommand(CommandConnection con, String nick, String command, IRCLine params);
+ to be parsed and acted upon
+
+OakCommand will have a central entry point:
+    public void doCommand(CommandConnection con, String nickMask, String command, IRCLine params);
+ nickMask will be the as close to nick!user@host as possible if user cannot
+ be obtained it must match the nick exactally host is the remote ip or host
+ address of the connection.
+

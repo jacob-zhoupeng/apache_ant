@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="parallel demo" basedir="." default="parallel_target">
+  <target name="prepare">
+    <mkdir dir="test"/>
+  </target>
+
+  <target name="parallel_target" depends="prepare">
+    <parallel>
+	  <copy todir="test">
+	    <fileset dir="irssibot-1.0.4" includes="**/*.java"/>
+	  </copy>
+	  <mkdir dir="testxml"/>
+	  <mkdir dir="testxml2"/>
+	  <copy todir="test">
+	    <fileset dir="oak-0.99.17" includes="**/*.java"/>
+	  </copy>
+	  <mkdir dir="testxml3"/>
+	</parallel>
+  </target>
+</project>
+
+<!--
+$ ant -f 001_parallel_problem.xml -listener org.apache.tools.ant.XmlLogger
+-->

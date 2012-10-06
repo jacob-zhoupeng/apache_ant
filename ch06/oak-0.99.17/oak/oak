@@ -1,0 +1,4 @@
+#!/bin/sh
+rm ~/oaklogs/*
+java -DDEBUG_LEVEL=$1 org.moxy.oak.Oak
+exit
