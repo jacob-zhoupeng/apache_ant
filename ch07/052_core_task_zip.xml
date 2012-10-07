@@ -1,0 +1,1 @@
+<zip zipfile="${builddir}/src.zip" basedir="src"/>
