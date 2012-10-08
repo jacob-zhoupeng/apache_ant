@@ -1,0 +1,13 @@
+PATH: cabarc
+
+attribute:
+	basedir
+	cabfile
+	compress
+	defaultexclude
+	excludes
+	excludefile
+	includes
+	includesfile
+	options
+	verbose

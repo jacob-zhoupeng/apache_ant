@@ -1,0 +1,7 @@
+attribute:
+	classpath
+	classpathref
+	clientjar
+	debug
+	ejbjar
+	mode

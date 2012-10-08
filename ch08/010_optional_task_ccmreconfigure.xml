@@ -1,0 +1,5 @@
+attribute:
+	ccmdir
+	ccmproject
+	recurse
+	verbose

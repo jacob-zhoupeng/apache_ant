@@ -1,0 +1,8 @@
+attribute:
+	ccmdir
+	comment
+	platform
+	release
+	resolver
+	subsystem
+	task
