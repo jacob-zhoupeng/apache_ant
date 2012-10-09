@@ -1,0 +1,8 @@
+attributes:
+	client
+	desc
+	lock
+	name
+	port
+	user
+	view

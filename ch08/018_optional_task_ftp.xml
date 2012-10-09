@@ -1,0 +1,19 @@
+netcomponents.jar
+http://www.savarese.org/oro/downloads
+
+attributes:
+	action
+	binary
+	depends
+	ignorenoncriticalerrors
+	listing
+	newer
+	passive
+	password
+	port
+	remotedir
+	separator
+	server
+	skipfailedtransfers
+	userid
+	verbose

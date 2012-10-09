@@ -1,0 +1,8 @@
+attributes:
+	classname
+	classpath
+	classpathref
+	failonerror
+	file
+	lenient
+	warn

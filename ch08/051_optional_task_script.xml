@@ -1,0 +1,14 @@
+http://oss.software.ibm.com/developerworks/projects/bsf
+
+attributes:
+	language
+	src
+
+<script language="javascript">
+	<![CDATA[
+		// some JavaScript code here...
+		if (a < b) {
+			alert('Hello, World.');
+		}
+	]]>
+</script>

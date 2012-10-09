@@ -1,0 +1,13 @@
+attributes:
+	bootclasspath
+	bootclasspathref
+	class
+	classpath
+	classpathref
+	destdir
+	force
+	old
+	outputfile
+	stubs
+	verbose
+	outputfile

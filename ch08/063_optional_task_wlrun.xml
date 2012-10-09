@@ -1,0 +1,15 @@
+attributes:
+	args
+	beahome
+	classpath
+	domain
+	home
+	jvmargs
+	name
+	password
+	pkpassword
+	policy
+	property
+	username
+	weblogicmainclass
+	wlclasspath

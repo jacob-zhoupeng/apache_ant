@@ -1,0 +1,11 @@
+attributes:
+	comment
+	file
+<target name="test_propertyfile">
+  <propertyfile comment="Edited by the propertyfile task"
+                file="stats.properties">
+    <entry key="numRuns" type="int" default="1" operation="+" value="1"/>
+	<entry key="lastRun" type="date" operation="=" value="now" pattern="MM dd, yyyy"/>
+	<entry key="runBy" operation="=" value="${user.name}"/>
+  </propertyfile>
+</target>

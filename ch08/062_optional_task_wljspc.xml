@@ -1,0 +1,10 @@
+attributes:
+	classpath
+	defaultexcludes
+	dest
+	excludes
+	excludesfile
+	includes
+	includesfile
+	package
+	src

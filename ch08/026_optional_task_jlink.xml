@@ -1,0 +1,10 @@
+attributes:
+	addfiles
+	compress
+	defaultexcludes
+	excludes
+	excludesfile
+	includes
+	includesfile
+	mergefiles
+	outfile

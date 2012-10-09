@@ -1,0 +1,12 @@
+http://www.merant.com
+
+attributes:
+	force
+	ignorereturncode
+	label
+	promotiongroup
+	pvcsbin
+	pvcsproject
+	repository
+	updateonly
+	workspace

@@ -1,0 +1,7 @@
+attributes:
+	initialcr
+	password
+	port
+	server
+	timeout
+	userid

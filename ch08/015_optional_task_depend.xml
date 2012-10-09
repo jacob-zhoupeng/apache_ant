@@ -1,0 +1,13 @@
+attributes:
+	cache
+	classpath
+	classpathref
+	closure
+	defaultexcludes
+	destdir
+	dump
+	excludes
+	excludesfile
+	includes
+	includefile
+	srcdir

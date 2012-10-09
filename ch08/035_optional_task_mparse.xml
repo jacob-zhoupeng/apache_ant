@@ -1,0 +1,8 @@
+attributes:
+	cleanup
+	debugparser
+	debugscanner
+	maxmemory
+	metamatahome
+	target
+	verbose

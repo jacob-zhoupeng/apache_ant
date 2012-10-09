@@ -1,0 +1,9 @@
+attributes:
+	cleanbuilddir
+	command
+	error
+	output
+	removesource
+	removespec
+	specfile
+	topdir

@@ -1,0 +1,11 @@
+attributes:
+	bcclist
+	cclist
+	failonerror
+	from
+	mailhost
+	message
+	messagefile
+	messagemimetype
+	subject
+	tolist

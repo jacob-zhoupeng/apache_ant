@@ -1,0 +1,8 @@
+http://xml.apache.org stylebook.jar
+
+attributes:
+	book
+	classpath
+	classpathref
+	skindirectory
+	targetdirectory

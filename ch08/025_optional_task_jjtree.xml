@@ -1,0 +1,17 @@
+http://www.webgain.com/products/java_cc/
+
+attributes:
+	buildnodefiles
+	javacchome
+	multi
+	nodedefaultvoid
+	nodefactory
+	nodepackage
+	nodeprefix
+	nodescopehook
+	nodeusesparser
+	outputdirectory
+	static
+	target
+	visitor
+	visitorexception

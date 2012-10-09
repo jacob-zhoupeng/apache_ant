@@ -1,0 +1,10 @@
+attributes:
+
+<target name="compile" depends="prepare">
+	<sound>
+		<!-- limit the applause to 2 seconds -->
+		<success duration="2000" source="APPLAUSE.WAW"/>
+		<fail source="EXPLODE.WAV"/>
+	</sound>
+	<javac ...> ... </javac>
+</target>

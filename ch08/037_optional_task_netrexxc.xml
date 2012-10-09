@@ -1,0 +1,38 @@
+http://www2.hursley.ibm.com/netrexx/
+
+attributes:
+	binary
+	classpath
+	comments
+	compact
+	compile
+	console
+	crossref
+	decimal
+	defaultexcludes
+	destdir
+	diag
+	excludes
+	excludesfile
+	explicit
+	format
+	includes
+	includesfile
+	java
+	keep
+	logo
+	replace
+	savelog
+	sourcedir
+	srcdir
+	strictargs
+	strictassign
+	strictcase
+	strictimport
+	strictprops
+	strictsignal
+	symbols
+	time
+	trace
+	utf8
+	verbose

@@ -1,0 +1,24 @@
+attributes:
+	buildparser
+	buildtokenmanager
+	cachetokens
+	choiceambiguitycheck
+	commontokenaction
+	debuglookahead
+	debugparser
+	debugtokenmanager
+	errorreporting
+	forcelacheck
+	ignorecase
+	javacchome
+	javaunicodeescape
+	lookahead
+	optimizetokenmanager
+	otherambiguitycheck
+	outputdirectory
+	sanitycheck
+	static
+	target
+	unicodeinput
+	usercharstream
+	usertokenmanager

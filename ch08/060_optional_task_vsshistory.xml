@@ -1,0 +1,15 @@
+attributes:
+	dateformat
+	fromdate
+	fromlabel
+	login
+	numdays
+	output
+	recursive
+	serverpath
+	ssdir
+	style
+	todate
+	tolabel
+	user
+	vsspath

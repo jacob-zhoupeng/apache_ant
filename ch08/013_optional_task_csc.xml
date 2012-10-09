@@ -1,0 +1,27 @@
+attribute:
+	additionalmodules
+	debug
+	defaultexcludes
+	definitions
+	docfile
+	excludes
+	excludefile
+	extraoptions
+	failonerror
+	fullpaths
+	includedefaultreferences
+	includes
+	includefile
+	incremental
+	mainclass
+	noconfig
+	optimize
+	outputfile
+	references
+	srcdir
+	targettype
+	unsafe
+	utf8output
+	warnlevel
+	win32icon
+	win32res

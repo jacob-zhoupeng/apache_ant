@@ -1,0 +1,17 @@
+attributes:
+	debug
+	defaultexcludes
+	excludes
+	excludesfile
+	extraoptions
+	failonerror
+	includes
+	includesfile
+	keyfile
+	listing
+	outputfile
+	owner
+	resourcefile
+	srcdir
+	targettype
+	verbose

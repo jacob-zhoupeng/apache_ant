@@ -1,0 +1,8 @@
+attributes:
+	classpath
+	debug
+	dest
+	ejbdescriptor
+	iasdescriptor
+	iashome
+	keepgenerated

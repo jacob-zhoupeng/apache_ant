@@ -1,0 +1,11 @@
+attributes:
+	defaultexcludes
+	dest
+	encoding
+	excludes
+	excludesfile
+	ext
+	includes
+	includesfile
+	reverse
+	src

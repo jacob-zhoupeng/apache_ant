@@ -1,0 +1,15 @@
+attributes:
+	applet
+	classname
+	exitprompt
+	finalsnapshot
+	home
+	inputfile
+	javaexe
+	recordfromstart
+	seedname
+	snapshotdir
+	tracknatives
+	vm
+	warnlevel
+	workingdir

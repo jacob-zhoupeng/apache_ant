@@ -1,0 +1,12 @@
+attributes:
+	classpath
+	defaultexcludes
+	descriptors
+	dest
+	excludes
+	excludesfil
+	includes
+	includesfile
+	keepgenerated
+	manifest
+	src

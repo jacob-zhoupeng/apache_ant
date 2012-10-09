@@ -1,0 +1,25 @@
+http://www.reliable-systems.com/tools/
+
+attributes:
+	builddir
+	classdir
+	classpath
+	classpathref
+	controlfile
+	defaultexcludes
+	excludes
+	excludesfile
+	failthrowable
+	includes
+	includesfile
+	instrumentdir
+	invariant
+	post
+	pre
+	quite
+	repbuilddir
+	repositorydir
+	srcdir
+	targets
+	updateicontrol
+	verbosity

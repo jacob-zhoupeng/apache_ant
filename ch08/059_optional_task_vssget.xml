@@ -1,0 +1,13 @@
+attributes:
+	autoresponse
+	date
+	label
+	localpath
+	login
+	quiet
+	recursive
+	serverpath
+	ssdir
+	version
+	vsspath
+	writable

@@ -1,0 +1,16 @@
+http://www.starbase.com
+
+attributes:
+	excludes
+	foldername
+	force
+	includes
+	password
+	projectname
+	recursion
+	servername
+	serverport
+	targetfolder
+	username
+	verbose
+	viewname

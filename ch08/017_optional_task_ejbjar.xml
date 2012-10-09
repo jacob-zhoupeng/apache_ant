@@ -1,0 +1,19 @@
+attributes:
+	basejarname
+	basenameterminator
+	classpath
+	defaultexcludes
+	descriptordir
+	destdir
+	excludes
+	excludesfile
+	flatdestdir
+	genericjarsuffix
+	includes
+	includesfile
+	manifest
+	naming
+	directory
+	descriptor
+	basejarname
+	srcdir

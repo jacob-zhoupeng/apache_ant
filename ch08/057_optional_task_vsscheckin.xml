@@ -1,0 +1,10 @@
+attributes:
+	autoresponse
+	comment
+	localpath
+	login
+	recursive
+	serverpath
+	ssdir
+	vsspath
+	writable

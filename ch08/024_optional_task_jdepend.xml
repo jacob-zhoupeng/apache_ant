@@ -1,0 +1,10 @@
+http://www.clarkware.com/software/JDepend.html
+
+attributes:
+	classpath
+	classpathref
+	dir
+	fork
+	haltonerror
+	jvm
+	outputfile

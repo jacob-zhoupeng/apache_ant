@@ -1,0 +1,8 @@
+attributes:
+	client
+	name
+	port
+	property
+	user
+	value
+	view

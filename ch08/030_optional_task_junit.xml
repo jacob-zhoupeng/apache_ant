@@ -1,0 +1,12 @@
+http://www.junit.org
+
+attributes:
+	dir
+	errorproperty
+	fork
+	haltonerror
+	haltonfailure
+	jvm
+	maxmemory
+	printsummary
+	timeout
